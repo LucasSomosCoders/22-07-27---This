@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This</title>
+</head>
+<body>
+  <h1>This</h1>
+
+  <button onclick="saludar(this)" id="boton">Saludar</button>
+  <hr>
+  <a href="javascript:saludar(this)">Saludar desde A</a>
+
+
+<script>
+    function saludar(element) {
+      // document.getElementById('boton').style.color = 'red';
+      console.log(element);
+      element.style.color = 'blue';
+    }
+
+    // console.log(this);
+</script>
+
+
+
+<script>
+// Ejemplo de let y var
+      let i = 1;
+      // let i = 3;
+
+      if(i === 1){
+        let i = 2;
+        console.log('Dentro del bloque ' + i);
+      }
+
+      console.log('Fuera del bloque ' + i);
+  </script>
+</body>
+</html>
